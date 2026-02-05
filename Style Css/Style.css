@@ -10,8 +10,8 @@ body {
   
 
 .footer-section img:hover {
-  transform: translateY(-5px); /* moves image up slightly */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* optional lift effect */
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
 }
     
     }
@@ -47,8 +47,8 @@ body {
     }
     
   p:hover {
-  color: #ffffff; /* bright white */
-  transform: translateY(-2px); /* optional subtle lift */
+  color: #ffffff; 
+  transform: translateY(-2px); 
 }
 
     a {
@@ -79,10 +79,9 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 9999; /* ensures it sits above everything */
+    width: 1521px;
+    z-index: 9999; 
 }
-
 
 .HeaderMenuTab {
     box-sizing: border-box;
@@ -92,7 +91,7 @@ body {
     align-items: center;
 
     padding: 0 48px;
-    width: 100%;
+    width: 1521px;
     height: 85px;
 
     position: fixed;
@@ -121,7 +120,7 @@ body {
                 margin: 0%;
                 font-family: 'Inter', sans-serif;
                 font-size: 16px;
-                font-weight: 600; /* semibold */
+                font-weight: 600; 
                 padding-bottom: 5px;
                 }
 
@@ -208,6 +207,93 @@ body {
                     cursor: pointer;
                     transition: background 0.3s ease, transform 0.2s ease;
                     }
+
+/*---------------------HEADER MOBILE----------------------------*/
+
+/*----------------MOBILE RULES FOR HEADER ------------------*/
+.mobile-menu-btn {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Mobile dropdown menu */
+.mobile-menu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background: #000;
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+  gap: 16px;
+  z-index: 999;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.mobile-menu a:hover {
+  color: #00ff99;
+}
+
+
+/* ===== MOBILE BREAKPOINT ===== */
+
+@media (max-width: 768px) {
+
+  .header,
+  .HeaderMenuTab {
+    left: 0;
+    right: 0;
+    width: auto;
+  }
+
+  .HeaderMenuTab {
+    padding: 0 16px;
+    height: 70px;
+    justify-content: space-between;
+  }
+
+  .header {
+    height: 70px;
+  }
+
+  /* Hide desktop nav + auth */
+  .CenterMenuButtons {
+    display: none;
+  }
+
+  .Auth-Button-Container {
+    display: none;
+  }
+
+  /* Show hamburger */
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  /* Smaller branding */
+  .Logo img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+
+}
+
+
+
 /*---------------------------------------------------------------------------------*/                 
 
 
@@ -217,7 +303,6 @@ body {
 
 
 /*--------------------------------HERO SECTION------------------------------------- */
-/* Remove default spacing */
 * {
   margin: 0;
   padding: 0;
@@ -380,11 +465,129 @@ html, body {
 }
 
 .location-lagos {
-  display: flex;           /* icon + text in a row */
-  align-items: center;     /* vertically center icon + text */
-  justify-content: center; /* center horizontally */
-  gap: 0.5rem;             /* spacing between icon and text */
+  display: flex;           
+  align-items: center;     
+  justify-content: center; 
+  gap: 0.5rem;             
 }
+/*-------------------------------------------------*/
+
+/*-----------------------HERO SECTION MOBILE VIEW-----------------------*/
+@media (max-width: 768px) {
+
+  /* Hero section full width */
+  .hero-section {
+    height: auto;           
+    padding-top: 100px;    
+  }
+
+  /* Video scales down and fits */
+  .hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Overlay remains full */
+  .hero-overlay {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Hero content stacks nicely */
+  .hero-content {
+    padding: 20px;
+    text-align: center;
+    max-width: 95%;
+  }
+
+  .hero-content h1 {
+    font-size: 24px; 
+    line-height: 1.3;
+    width: 100%;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 95%;
+    margin-bottom: 15px;
+  }
+
+  
+@media (max-width: 768px) {
+  .H-action-buttons {
+    flex-direction: column;
+    gap: 15px;              
+    width: 100%;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 80%;
+    font-size: 14px;
+    height: 50px;
+  }
+
+  .primary-btn{
+  margin-bottom: 10px;
+  }
+}
+  
+  .info-section {
+    flex-direction: column;
+    gap: 10px;
+    opacity: 1;
+  }
+
+  .info-block, .info-block-About {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+  }
+  .info-block{
+    padding-top: -10px;
+  }
+
+  .info-block img {
+    width: 20px;
+    height: 16px;
+  }
+
+  .info-title {
+    font-size: 12px;
+  }
+
+  .info-text {
+    font-size: 10px;
+  }
+
+}
+
+/* Extra small screens (phones) */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 20px;
+  }
+  .hero-content p {
+    font-size: 12px;
+  }
+  .primary-btn, .secondary-btn {
+    width: 90%;
+    font-size: 12px;
+    height: 45px;
+  }
+  .info-title {
+    font-size: 10px;
+  }
+  .info-text {
+    font-size: 9px;
+  }
+}
+/*------------------------------------------*/
 
 
 
@@ -405,7 +608,7 @@ html, body {
 /* Section Heading */
 .track h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 36px;
+    font-size: 22px;
     font-weight: 700;
     color: #122743;
     margin: 0;
@@ -414,8 +617,8 @@ html, body {
 /* Section Subtext */
 .track p {
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 300;
     color: #555555;
     max-width: 500px;
 }
@@ -429,8 +632,7 @@ html, body {
     width: 100%;
     border-radius: 5px 25px 25px 5px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* subtle shadow */
-}
+  }
 
 /* Search Input */
 .search-input {
@@ -463,26 +665,68 @@ html, body {
     background: #d51c1c;
     transform: translateY(-1px);
 }
-
-/* Responsive Adjustment */
-@media (max-width: 480px) {
-    .track h2 {
-        font-size: 28px;
-    }
-    .track p {
-        font-size: 16px;
-    }
-    .search-container {
-        max-width: 100%;
-    }
-}
 /*----------------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .track {
+    padding: 40px 20px;
+  }
+
+  .track h2 {
+    font-size: 24px;
+  }
+
+  .track p {
+    font-size: 12px;
+    max-width: 90%;
+  }
+
+  /* Search container fits mobile */
+  .search-container {
+    background: none;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .search-input, .search-btn {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .search-btn {
+    margin-top: 8px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .track h2 {
+    font-size: 20px;
+  }
+  .track p {
+    font-size: 12px;
+  }
+  .search-btn {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+}
+
+/*----------------------------------------------------------------------*/
+
+
+
+
+
+
 
 
 
 
 /*--------------------------OUR SERVICES SECTION------------------------*/
 .Our-services {
+  padding-left: 50px;
   opacity: 0.9;
   align-self: center;
   flex-direction: column;
@@ -563,7 +807,6 @@ html, body {
   animation: shake 0.5s ease-in-out;
 }
 
-
 #Displayimg1 {
   width: 400px;
   height: 400px;
@@ -572,8 +815,6 @@ html, body {
   display: block;
   padding-bottom: 20px;
 }
-
-
 
 /* Text side */
 .Courier-texts {
@@ -602,8 +843,6 @@ html, body {
   color: rgba(255, 40, 40, 0.85);
 }
 
-
-
 .knowmore-btn img {
   width: 20px;
   height: 10px;
@@ -613,7 +852,49 @@ html, body {
   size: 10px;
 }
 
-/*----------------------------------------------------------------*/
+/*------------------------MOBILE-OUR SERVICES SECTION---------------------------*/
+@media (max-width: 768px) {
+  .Our-services{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .Our-services-texts{
+    justify-content: center;
+  }
+  .Our-services-texts h2{
+    width: 100%;
+  }
+  .Our-services-texts span{
+    opacity: 0.6;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .Card-Holders{
+    flex-direction: column;
+    margin-top: -40px;
+  }
+  .card-1{
+    width: 90%;
+    height: 90%;
+    padding-bottom: 50px;
+  }
+}
+/*---------------------------------------*/  
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -655,6 +936,7 @@ html, body {
 }
 .text-contents h1{
   color: #00c896;
+  font-size: 2em;
 }
 .text-contents p {
   width:600px ;
@@ -688,7 +970,79 @@ html, body {
   flex-shrink: 0;
 }
 
-/*--------------------------------------------------------------------*/
+/*------MOBILE FAST & AFFORDABLE--------------------*/
+@media (max-width: 768px) {
+
+  .Fast-Affordable-Deliveries {
+    margin-top: -50px;
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    justify-content: center; /* centers inner block */
+  }
+
+  .fast-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;   /* center blocks */
+    width: 100%;
+  }
+
+  .text-contents {
+    width: 90%;
+    text-align: left;      /* better reading */
+  }
+
+  .text-contents h1 {
+    align-self: flex-start;
+    text-align: left;
+    font-size: 32px;
+  }
+
+  .text-contents p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    width: 100%;
+  }
+
+  .fast-content-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+  }
+
+  .fast-content-image img {
+    width: 100%;
+    margin-left: -22px;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .View-more-btn {
+    align-self: flex-start;
+    width: 100%;
+    max-width: 280px;
+    height: 50px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    display: block;
+  }
+}
+
+/*------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -713,7 +1067,6 @@ html, body {
   flex-direction: row;
   gap: 100px;
   align-items: center;
-
 }
 
 .Content {
@@ -723,12 +1076,25 @@ html, body {
   height: 400px; 
   width: 600px;
 }
-
-
+.Content h1{
+  font-size: 2em;
+  color: #009966;
+  padding-bottom: 10px;
+}
+.Content h2{
+  color: white;
+  font-size: 1.5em;
+  opacity: 0.8;
+  padding-bottom: 10px;
+}
+.Content p {
+  padding-bottom: 20px;
+}
 .deliveryrider-image {
   height: 550px;
   width: 400px;
 }
+
 
 .Partner-with-us {
   background-color: #122743;       
@@ -748,9 +1114,43 @@ html, body {
   background: #ffffff;
   color: #122743;
 }
-/*----------------------------------------------------------------------------*/
+/*------------------MOBILE P&P---------------------------------------------*/
+  
+@media (max-width: 768px) {
+.professional-partnership {
+    margin-top: -50px;
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+  }
 
+  .p-container {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;   
+    width: 90%;
+    align-items: flex-start;
+  }
+  .deliveryrider-image{
+    align-self: left;
+    height: 440px;
+    width: 315px;
+  }
+  .Content{
+    width: 80%;
+  }
+  .Content h2{
+    font-size: 17px;
+  }
+  .Partner-with-us{
+    margin-top: 20px;
+  }
 
+}
+/*---------------------------------------------*/
 
 
 
@@ -844,6 +1244,76 @@ html, body {
   color: #ffffff;
 }
 /*----------------------------------------------------------------------------*/
+/*---------------- MOBILE — HOW IT WORKS ----------------*/
+@media (max-width: 768px) {
+
+  .how-errand-works {
+    margin-top: 100px;
+    width: 100%;
+    padding: 100px 20px;
+    gap: 100px;
+  }
+
+  .how-errand-works h1 {
+    width: 100%;
+    height: auto;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .howitworks-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* each step becomes a stacked card */
+  .place-request,
+  .get-quote,
+  .relax-receive {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding-bottom: 40px;
+  }
+
+  .step-text h2 {
+    font-size: 18px;
+  }
+
+  .step-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .step-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .step-img img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
+
+  .step-circle {
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+  }
+
+}
+
+/*-----------------------------------*/
 
 
 
@@ -1014,20 +1484,103 @@ html, body {
 }
 
 
-
-/* Make cards responsive for small screens */
+/*---------------- MOBILE — CALL TO ACTION ----------------*/
 @media (max-width: 768px) {
-  .Graphics {
+
+  .Call-to-action {
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
+  }
+
+  .promo-info-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Graphics {
+    width: 100%;
+    max-width: 380px;
+    height: 815px;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
+    border-radius: 40px;
+    align-items: center;
   }
 
   .promo-info1,
   .promo-info2 {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
   }
+
+  .promo-img-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .promo-img-2 img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
+
+  .promo-tag {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .Amount-text2 {
+    color: white;
+    font-size: 20px;
+  }
+
+  .definition-text {
+    color: white;
+    font-size: 14px;
+  }
+
+  .promo-info-text {
+    width: 100%;
+    max-width: 380px;
+    height: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .PROMO-H1 h2 {
+    text-align: center;
+    width: 400px;
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .click-text {
+    font-size: 14px;
+  }
+
+  .Book-now {
+    height: 7;
+    font-size: 15px;
+    margin-top: -5px;
+  }
+
 }
+
+/*-------------------------------------*/
 
 
 
@@ -2105,3 +2658,4 @@ html, body {
   line-height: 1.6;
   color: #c0c0c0;
 }
+
