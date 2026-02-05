@@ -266,6 +266,11 @@ body {
     height: 70px;
   }
 
+  .LogoBranding span{
+    font-size: 12px;
+    width: 200px;
+  }
+
   /* Hide desktop nav + auth */
   .CenterMenuButtons {
     display: none;
@@ -275,6 +280,13 @@ body {
     display: none;
   }
 
+.signup-btn,
+  .login-btn {
+    font-size: 11px;       
+    height: 28px;          
+    min-width: auto;
+    border-radius: 4px;
+  }
   /* Show hamburger */
   .mobile-menu-btn {
     display: block;
@@ -2658,4 +2670,5 @@ html, body {
   line-height: 1.6;
   color: #c0c0c0;
 }
+
 
