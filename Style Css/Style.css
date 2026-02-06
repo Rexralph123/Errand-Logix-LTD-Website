@@ -902,8 +902,8 @@ html, body {
     margin-top: -40px;
   }
   .card-1{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     padding-bottom: 50px;
   }
 }
