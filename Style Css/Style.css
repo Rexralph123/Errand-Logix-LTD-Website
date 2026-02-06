@@ -281,17 +281,17 @@ body {
 
   .Auth-Buttons-Container {
     display: flex;
-    gap: 6px; 
+    gap: 5px; 
     flex-wrap: nowrap;
     flex-direction: row;
-    padding-right: 20px;             
+    padding-right: 15px;             
   }
 
   .signup-btn,
   .login-btn {
-    font-size: 11px;            
+    font-size: 10px;            
     height: 25px;          
-    min-width: 70px;
+    min-width: 80px;
     border-radius: 4px;
   }
 
@@ -775,7 +775,6 @@ html, body {
   width: 600px;
   text-align: center;
   line-height: 1.6;
-  margin: 0 auto;
 }
 
 
@@ -813,20 +812,20 @@ html, body {
 
 
 .card-1 {
-  width: 400px; /* adjust as needed */
-  border-radius: 10px; /* optional, smooth corners */
+  width: 650px; 
+  border-radius: 10px; 
   overflow: hidden;
-  cursor: pointer; /* nice hover effect */
+  cursor: pointer;
 }
 
 /* Shake animation */
 @keyframes shake {
-  0% { transform: translateX(0); }
-  20% { transform: translateX(-3px); }
+  0%  { transform: translateX(0);   }
+  20% { transform: translateX(-3px);}
   40% { transform: translateX(3px); }
-  60% { transform: translateX(-3px); }
+  60% { transform: translateX(-3px);}
   80% { transform: translateX(3px); }
-  100% { transform: translateX(0); }
+  100%{ transform: translateX(0);   }
 }
 
 /* Apply shake on hover */
