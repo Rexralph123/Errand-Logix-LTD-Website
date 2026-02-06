@@ -291,7 +291,7 @@ body {
   .login-btn {
     font-size: 11px;            
     height: 25px;          
-    min-width: 60px;
+    min-width: 80px;
     border-radius: 4px;
   }
 
@@ -726,10 +726,10 @@ html, body {
 /* Extra small phones */
 @media (max-width: 480px) {
   .track h2 {
-    font-size: 20px;
+    font-size: 15px;
   }
   .track p {
-    font-size: 12px;
+    font-size: 13px;
   }
   .search-btn {
     font-size: 12px;
@@ -890,11 +890,26 @@ html, body {
     justify-content: center;
   }
   .Our-services-texts h2{
+    font-size: 20px;
     width: 100%;
   }
+  .Courier-texts h3{
+    font-size: 16px;
+  }
+  .Courier-texts span{
+    font-size: 13px;
+  }
   .Our-services-texts span{
+    font-size: 13px;
     opacity: 0.6;
     width: 100%;
+  }
+  .knowmore-btn{
+    font-size: 13px;
+  }
+  .knowmore-btn img{
+    width: 18px;
+    height: auto;
   }
 }
 @media (max-width: 768px) {
