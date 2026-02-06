@@ -270,23 +270,35 @@ body {
     font-size: 12px;
     width: 200px;
   }
-
   /* Hide desktop nav + auth */
   .CenterMenuButtons {
     display: none;
   }
+}
 
-  .Auth-Button-Container {
-    display: none;
+
+@media (max-width: 768px) {
+
+  .Auth-Buttons-Container {
+    display: flex;
+    gap: 6px; 
+    flex-wrap: nowrap;
+    flex-direction: row;             
   }
 
-.signup-btn,
+  .signup-btn,
   .login-btn {
     font-size: 11px;       
-    height: 28px;          
+    padding: 4px 8px;      
+    height: 25px;          
     min-width: auto;
     border-radius: 4px;
   }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
   /* Show hamburger */
   .mobile-menu-btn {
     display: block;
@@ -870,7 +882,7 @@ html, body {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
   }
 
   .Our-services-texts{
@@ -1592,8 +1604,7 @@ html, body {
 
 }
 
-/*-------------------------------------*/
-
+/*-------GIT HUB UPDATE DONE ABOVE--------------*/
 
 
 
@@ -2023,8 +2034,6 @@ html, body {
   }
 }
 /*------------------------------------*/
-
-
 
 
 
@@ -2670,5 +2679,3 @@ html, body {
   line-height: 1.6;
   color: #c0c0c0;
 }
-
-
