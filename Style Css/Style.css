@@ -265,7 +265,9 @@ body {
   .header {
     height: 70px;
   }
-
+  .LogoBranding{
+    padding-right: 15px;
+  }
   .LogoBranding span{
     font-size: 12px;
     width: 200px;
@@ -284,14 +286,14 @@ body {
     gap: 5px; 
     flex-wrap: nowrap;
     flex-direction: row;
-    padding-right: 15px;             
+    padding-right: 10px;             
   }
 
   .signup-btn,
   .login-btn {
     font-size: 10px;            
     height: 25px;          
-    min-width: 80px;
+    min-width: 75px;
     border-radius: 4px;
   }
 
@@ -884,7 +886,7 @@ html, body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-right: 57px;
+    padding-right: 50px;
   }
 
   .Our-services-texts{
@@ -908,9 +910,17 @@ html, body {
   .knowmore-btn{
     font-size: 13px;
   }
+
+  .card-1 img{
+    align-self: center;
+    align-items: center;
+  }
   .knowmore-btn img{
     width: 18px;
     height: auto;
+  }
+  .info-span {
+    width: 350px;
   }
 }
 @media (max-width: 768px) {
