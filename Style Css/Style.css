@@ -1299,14 +1299,14 @@ html, body {
     gap: 5px; 
     flex-wrap: nowrap;
     flex-direction: row;
-    padding-right: 15px;             
+    padding-right: 10px;             
   }
 
   .signup-btn,
   .login-btn {
     font-size: 11px;            
     height: 25px;          
-    min-width: 75px;
+    min-width: 70px;
     border-radius: 4px;
   }
 
@@ -2816,3 +2816,4 @@ html, body {
   }
 
 }
+
