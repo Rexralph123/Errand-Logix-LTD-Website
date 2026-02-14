@@ -1245,8 +1245,8 @@ html, body {
 
 @media (max-width: 768px) {
   html, body {
-  overflow-x: hidden;
-}
+  overflow-x: hidden;}
+
 
 .fixed-overlay {
   right: 0;
@@ -1286,10 +1286,9 @@ html, body {
   .CenterMenuButtons {
     display: none;
   }
-}
 
 
-@media (max-width: 768px) {
+
 
   .Auth-Buttons-Container {
     display: flex;
@@ -1325,13 +1324,12 @@ html, body {
   .text {
     font-size: 15px;
   }
-}
+
 /*---------------------------------------------------------------------------------*/                 
 
 
 
 /*--------HERO SECTION MOBILE VIEW---------------*/
-@media (max-width: 768px) {
 
   /* Hero section full width */
   .hero-section {
@@ -1372,8 +1370,7 @@ html, body {
     margin-bottom: 15px;
   }
 
-  
-@media (max-width: 768px) {
+
   .H-action-buttons {
     flex-direction: column;
     gap: 15px;              
@@ -1392,7 +1389,7 @@ html, body {
   .primary-btn{
   margin-bottom: 10px;
   }
-}
+
   
   .info-section {
     flex-direction: column;
@@ -1423,10 +1420,9 @@ html, body {
     font-size: 10px;
   }
 
-}
+
 
 /* Extra small screens (phones) */
-@media (max-width: 480px) {
   .hero-content h1 {
     font-size: 20px;
   }
@@ -1444,11 +1440,10 @@ html, body {
   .info-text {
     font-size: 9px;
   }
-}
+
 /*------------------------------------------*/
 
 /*--------SEARCH MOBILE VIEW-------------------------------*/
-@media (max-width: 768px) {
   .track {
     padding: 40px 20px;
   }
@@ -1480,10 +1475,9 @@ html, body {
   .search-btn {
     margin-top: 8px;
   }
-}
+
 
 /* Extra small phones */
-@media (max-width: 480px) {
   .track h2 {
     font-size: 15px;
   }
@@ -1494,118 +1488,106 @@ html, body {
     font-size: 12px;
     padding: 10px 0;
   }
-}
 
-/*------MOBILE-OUR SERVICES SECTION----*/
-@media (max-width: 768px) {
-  .Our-services{
+
+/* ================= MOBILE FIX ================= */
+
+  /* Global safe width */
+  body {
+    overflow-x: hidden;
+  }
+
+  section {
+    width: 100%;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* -------- OUR SERVICES -------- */
+
+  .Our-services {
+    padding: 60px 16px 0 16px;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    padding-right: 57px;
   }
 
-  .Our-services-texts{
-    justify-content: center;
+  .Our-services-texts {
+    padding-bottom: 40px;
   }
-  .Our-services-texts h2{
+
+  .Our-services-texts h2 {
     font-size: 20px;
-    width: 100%;
   }
-  .Courier-texts h3{
+
+  .break-line {
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .Card-Holders {
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+    margin: 0 auto;
+  }
+
+  .card-1 {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  #Displayimg1 {
+    width: 100%;
+    height: auto;
+    max-height: 260px;
+    object-fit: cover;
+  }
+
+  .Courier-texts {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .Courier-texts h3 {
     font-size: 16px;
   }
-  .Courier-texts span{
-    font-size: 13px;
-  }
-  .Our-services-texts span{
-    font-size: 13px;
-    opacity: 0.6;
+
+  .info-span {
     width: 100%;
-  }
-  .knowmore-btn{
-    font-size: 13px;
-  }
-  .knowmore-btn img{
-    width: 18px;
-    height: auto;
-  }
-}
-@media (max-width: 768px) {
-  .Card-Holders{
-    flex-direction: column;
-    width: 400px;
-    margin-top: -40px;
-  }
-  .card-1{
-    align-content: center;
-    width: 400px;
-    height: 100%;
-    padding-bottom: 50px;
-  }
-  .Courier-texts{
-    align-items: left;
-    text-align: left;
-    width: 100%;
-  }
-  .info-span{
-  width: 300px;
+    font-size: 14px;
+    line-height: 1.5;
   }
 
-  #displayimg1{
-    height: 250px;
-    width: 200px;
-    align-items: center;
-    justify-content: center;
-  }
-}
+  /* -------- FAST & AFFORDABLE -------- */
 
-/*------MOBILE FAST & AFFORDABLE-------*/
-@media (max-width: 768px) {
   .Fast-Affordable-Deliveries {
-    margin-left: 30px;
-    padding: 0px 20px;
-    align-items: flex-start;
-    height: 800px;
-    width: 400px;
-  
-    display: flex;
-    align-items: center;
-    justify-content: left; 
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 40px 16px;
   }
 
   .fast-content {
-    width: 100%;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+    gap: 24px;
+    padding-top: 0;
   }
 
   .text-contents {
-    width: 100%;
-    text-align: left;     
+    text-align: left;
+    align-items: flex-start;
   }
 
   .text-contents h1 {
-    font-size: 25px;
-    width: 90%;
+    font-size: 22px;
   }
 
   .text-contents p {
-    text-align: left;
-    margin: 0;
-    font-size: 15px;
-    line-height: 1.6;
-    width: 300px;
-  }
-
-  .fast-content-image {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-self: flex-start;
+    font-size: 14px;
   }
 
   .fast-content-image img {
@@ -1615,60 +1597,59 @@ html, body {
   }
 
   .View-more-btn {
-    align-self: flex-start;
     width: 100%;
-    max-width: 280px;
-    height: 50px;
-    font-size: 16px;
-    margin-bottom: 30px;
-    display: block;
+    max-width: 260px;
+    height: 48px;
+    font-size: 15px;
   }
-}
 
-/*------------------MOBILE P&P---------------------------------------------*/
-@media (max-width: 768px) {
-.professional-partnership {
-    margin-top: -50px;
+  /* -------- PROFESSIONAL SECTION -------- */
+
+  .professional-partnership {
+    padding-top: 60px;
     width: 100%;
     min-height: auto;
-    display: flex;
-    justify-content: center;
   }
 
   .p-container {
-    display: flex;
     flex-direction: column;
-    gap: 20px;
-    align-items: center;   
-    width: 90%;
-    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+    align-items: center;
   }
-  .deliveryrider-image{
-    align-self: left;
-    height: 440px;
-    width: 315px;
+
+  .deliveryrider-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
   }
-  .Content{
-    width: 80%;
+
+  .Content {
+    width: 100%;
+    height: auto;
   }
-  .Content h2{
-    font-size: 17px;
+
+  .Content h1 {
+    font-size: 20px;
   }
-  .Partner-with-us{
-    margin-top: 20px;
-  }
-  .Partner-with-us {
-    align-self: flex-start;
-    max-width: 400px;
-    height: 50px;
+
+  .Content h2 {
     font-size: 16px;
-    margin-bottom: 30px;
-    display: block;
-}
-}
+  }
+
+  .Content p {
+    font-size: 14px;
+  }
+
+  .Partner-with-us {
+    width: 100%;
+    max-width: 260px;
+    height: 48px;
+    font-size: 15px;
+  }
+
 
 /*---------------- MOBILE — HOW IT WORKS ----------------*/
-@media (max-width: 768px) {
   .how-errand-works {
     margin-top: 00px;
     width: 100%;
@@ -1749,11 +1730,10 @@ html, body {
     font-size: 16px;
   }
 
-}
+
 
 
 /*------ MOBILE — CALL TO ACTION -----*/
-@media (max-width: 768px) {
   .Call-to-action {
     width: 100%;
     padding: 60px 20px;
@@ -1848,10 +1828,9 @@ html, body {
     margin-top: -5px;
   }
 
-}
+
 /*-------------------------------------*/
 /* ======= BOTTOM DESIGN MOBILE ====== */
-@media (max-width:768){
   .full-footer{
     height: auto;
     align-items: center;
@@ -1860,8 +1839,8 @@ html, body {
     height: 200px;
     display: flex;  
   } 
-}
-@media (max-width: 768px) {
+
+
   .icons {
     margin-top: -250px;
     display: flex;
@@ -1909,10 +1888,10 @@ html, body {
   .CATbottom-img {
     margin: 0 auto -70px;
   }
-}    
+    
 
 /* =======FOOTER BOTTOM MOBILE ====== */
-@media (max-width: 768px) {
+
 
   .footer-bottom {
     flex-direction: row;
@@ -1950,6 +1929,10 @@ html, body {
     font-size: 15px;
     font-family: 'poppins';
   }
+
+
+
+
 
 }
 
