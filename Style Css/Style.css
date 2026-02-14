@@ -1244,6 +1244,23 @@ html, body {
 /* ========= HEADER ========= */
 
 @media (max-width: 768px) {
+  html, body {
+  overflow-x: hidden;
+}
+
+.fixed-overlay {
+  right: 0;
+  max-width: 100%;
+}
+
+
+  header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
   .header,
   .HeaderMenuTab {
     left: 0;
@@ -1517,11 +1534,12 @@ html, body {
 @media (max-width: 768px) {
   .Card-Holders{
     flex-direction: column;
+    width: 400px;
     margin-top: -40px;
   }
   .card-1{
     align-content: center;
-    width: 100%;
+    width: 400px;
     height: 100%;
     padding-bottom: 50px;
   }
@@ -1533,7 +1551,10 @@ html, body {
   .info-span{
   width: 300px;
   }
+
   #displayimg1{
+    height: 250px;
+    width: 200px;
     align-items: center;
     justify-content: center;
   }
@@ -1541,21 +1562,16 @@ html, body {
 
 /*------MOBILE FAST & AFFORDABLE-------*/
 @media (max-width: 768px) {
-  .Our-services {
-  padding-top: 100px;
-}
-
-.Our-services-texts {
-  width: 100%;
-  text-align: center;
-}
-
   .Fast-Affordable-Deliveries {
-    width: 100%;
-
+    margin-left: 30px;
+    padding: 0px 20px;
+    align-items: flex-start;
+    height: 800px;
+    width: 400px;
+  
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: left; 
   }
 
   .fast-content {
@@ -1614,6 +1630,7 @@ html, body {
 .professional-partnership {
     margin-top: -50px;
     width: 100%;
+    padding-right: 40px;
     margin-right: 57px;
     min-height: auto;
     display: flex;
@@ -1645,7 +1662,7 @@ html, body {
   }
   .Partner-with-us {
     align-self: flex-start;
-    max-width: 100%;
+    max-width: 400px;
     height: 50px;
     font-size: 16px;
     margin-bottom: 30px;
@@ -1751,6 +1768,7 @@ html, body {
   }
 
   .promo-info-container {
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -2882,9 +2900,6 @@ html, body {
   
   .Our-Core-Values h2{
     font-size: 20px;
-  }
-  .Values-card h3{
-    font-size: ;
   }
   .Value-Head-Text{
     width: 350px;
