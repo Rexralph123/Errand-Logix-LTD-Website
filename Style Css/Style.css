@@ -1630,15 +1630,12 @@ html, body {
 .professional-partnership {
     margin-top: -50px;
     width: 100%;
-    padding-right: 40px;
-    margin-right: 57px;
     min-height: auto;
     display: flex;
     justify-content: center;
   }
 
   .p-container {
-    padding-left: 50px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1860,12 +1857,11 @@ html, body {
     align-items: center;
   }
   .icon-container{
-    height: 400px;
+    height: 200px;
     display: flex;  
   } 
 }
 @media (max-width: 768px) {
-
   .icons {
     margin-top: -250px;
     display: flex;
