@@ -1836,7 +1836,6 @@ html, body {
 /* ======= BOTTOM DESIGN MOBILE ====== */
 @media (max-width: 768px) { 
 .full-footer {
-  
   margin: 0;
   width: 100%;
   max-width: 100%;
@@ -1861,30 +1860,6 @@ html, body {
     gap: 15px;               
     margin: 0;               
     flex-wrap: nowrap;       
-  }
-
-  .design2 {
-    width: 32%;
-    max-width: 120px;
-    opacity: 0.9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
-  }
-
-  .design2-img,
-  .design2-down {
-    width: 15px;
-    height: 15px;
-    object-fit: contain;
-  }
-
-  .design2 h4 {
-    font-size: 8px;
-    line-height: 1;
-    font-weight: 200;
   }
 
   .bottom-background-img {
@@ -1914,7 +1889,7 @@ html, body {
   }
 
   .logo-branding {
-    padding-left: 50px;
+    padding-left: 20px;
     margin-left: -30px;
     align-content: left;
     align-items: left;
@@ -1938,6 +1913,7 @@ html, body {
     font-size: 10px;
   }
   .copyright {
+    text-align: end;
     font-family: 'inter';
     font-size: 8px;
   }
@@ -1946,6 +1922,24 @@ html, body {
     font-family: 'poppins';
   }
 
+}
+@media only screen and (max-width: 768px) {
+  .icon-container {
+    opacity: 0.5;
+    flex-direction: column;
+  }
+
+  .design2-down{
+    display: none;
+  }
+  .design2-img {
+    margin-bottom: -100px;
+    width: 5px;
+    height: 5px;
+  }
+  .icon-container h4 {
+        display: none;
+    }
 }
 
 
@@ -1987,10 +1981,10 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #111;         /* dark card background */
+  background: #111;         
   border-radius: 16px;
   height: 180px;
-  width: 180px;             /* card width */
+  width: 180px;             
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #222;
 }
@@ -2000,7 +1994,7 @@ html, body {
   box-shadow: 0 12px 25px rgba(0, 200, 150, 0.3);
 }
 
-/* Icon */
+
 .Fast-Delivery img {
   width: 60px;
   height: 60px;
@@ -2047,12 +2041,10 @@ html, body {
 }
 
 
-/* Individual Achievement Card */
-
 /* Achievement Numbers */
 .Achievement-text {
   font-size: 2rem;
-  color: #00c896;          /* brand accent green */
+  color: #00c896;          
   margin-bottom: 8px;
   text-align: center;
 }
@@ -2110,9 +2102,6 @@ html, body {
   box-shadow: 0 14px 30px rgba(0, 200, 150, 0.25);
   border-bottom: 3px solid #00c896;
 }
-
-
-
 
 
 
@@ -2300,119 +2289,202 @@ html, body {
   height: 70px;
   transition: transform 0.2s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
-/*-----SERVICES PAGE MOBILE VIEW--------------*/
-
-@media (max-width: 768px) {
-  .Services-header{
-    margin-top: -50px;
-    align-items: center;
-    justify-content: center;
-  }
-  .Services-header h1{
-    width: 350px;
-    font-size: 25px;
-  }
-  .Services-header p{
-    text-align: center;
-    width: 350px;
-    font-size: 13px;
-  }
+.general-btn:hover {
+  background-color: white;
+  color: #122743;
 }
 
+/*---------------- MOBILE VIEW ----------------*/
 @media (max-width: 768px) {
+
+  /* ---------------- Services Header ---------------- */
+  .Services-header {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .Services-header h1 {
+    font-size: 24px;
+    width: 90%;
+    margin: 0 auto 10px auto;
+  }
+
+  .Services-header p {
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  /* ---------------- Header Icons ---------------- */
   .Header-icon-container {
     flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  .Fast-Delivery1 {
+    width: 90%;
+    max-width: 250px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Fast-Delivery1 img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .Fast-Delivery1 h4 {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .Fast-Delivery1 p {
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.4;
+  }
+
+  /* ---------------- Services 3 / Grid ---------------- */
+  .Services-3 {
+    width: 100%;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .services-header {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto 30px auto;
+  }
+
+  .services-header h1 {
+    font-size: 22px;
+  }
+
+  .services-header .tagline,
+  .services-header .intro {
+    font-size: 14px;
+    width: 90%;
+    margin: 5px auto;
+  }
+
+  .services-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .service-card {
+    width: 45%;
+    min-width: 140px;
+    height: auto;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .service-card h3 {
+    font-size: 16px;
+  }
+
+  .service-card p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .service-card .icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  /* ---------------- Service Offers ---------------- */
+  .Service-offers {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    margin-bottom: -170px;
+    height: auto;
+  }
+
+  .Service-info-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
-    }
-    .Fast-Delivery1 {
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      
-    }
-    .Fast-Delivery1 p{
-      margin-left: 43px;
-      text-align: center;
-      width: 150px;
-    }
-  .Fast-Delivery {
-    width: 80%;
+    width: 100%;
   }
-}
 
-@media (max-width: 768px) {
-  .Services-3{
-    align-items: center;
-    align-content: center;
-  }
-  .services-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .Services-3 h1{
-    font-size: 20px;
-  }
-  .tagline {
-    width: 400px;
-    font-size: 13px;
-  }
-  .Services-3 p{
-    width: 350px;
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 768px){
-  .service-card p{
-    padding-top: 10px;
-    font-size: 13px;
-    width: 200px;
-  }
-  .service-card{
-    height: 200px;
-  }
-}
-
-
-@media (max-width: 768px){
-  .Service-offers{
-    display: flex;
+  .des-container {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
   }
-  .Service-info-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+  .des-holder-text1,
+  .des-holder-text2 {
+    max-width: 90%;
+    width: 100%;
+    gap: 12px;
+    padding-bottom: 15px;
   }
-  .des-container{
-    padding-bottom: 100px;
-    justify-content: center;
-  }
+
   .TEXT h2 {
-    font-size: -60px;
-  }
-  .TEXT p{
-    font-size: 13px;
-  }
-  .des-holder p{
-    font-size: 13px;
-  }
-  .service-img1{
-    margin-top: -250px;
-    width: 300px;
-    height: 211.5px;
-    overflow: hidden;
-  }
-  .service-img1 img{
-    opacity: 0.7;
-    width: 300px;
+    font-size: 18px;
+    margin-bottom: 6px;
   }
 
+  .TEXT p,
+  .des-holder p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .des-holder-container {
+    padding-top: 50px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .des-holder-container img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .service-img1 {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    padding-bottom: 11.5px;
+  }
+
+  .service-img1 img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+  }
 }
+
+
+
 
 
 
