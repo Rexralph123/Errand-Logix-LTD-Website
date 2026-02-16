@@ -1654,7 +1654,7 @@ html, body {
 
 /*---------------- MOBILE — HOW IT WORKS ----------------*/
   .how-errand-works {
-    margin-top: 00px;
+    margin-top: 0px;
     width: 100%;
     padding: 100px 20px;
     gap: 100px;
@@ -1857,7 +1857,7 @@ html, body {
     flex-direction: row;     
     justify-content: center; 
     align-items: center;
-    gap: 15px;               
+    gap: 10px;               
     margin: 0;               
     flex-wrap: nowrap;       
   }
@@ -1906,6 +1906,7 @@ html, body {
   }
 
   .footer-contact {
+    width: 300px;
     padding-right: 50px;
     margin-right: -50px;
     align-content: right;
@@ -2299,11 +2300,23 @@ html, body {
 
   /* ---------------- Services Header ---------------- */
   .Services-header {
-    margin-top: 20px;
+    margin-top: 120px;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 10px;
+  }
+  .Services-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 16px;
+    text-align: center;
+    padding-bottom: 30px;
   }
 
   .Services-header h1 {
@@ -2313,8 +2326,9 @@ html, body {
   }
 
   .Services-header p {
+    text-align: center;
     font-size: 14px;
-    width: 90%;
+    width: 350px;
     margin: 0 auto;
     line-height: 1.5;
   }
@@ -2326,6 +2340,9 @@ html, body {
     align-items: center;
     justify-content: center;
     margin: 20px auto;
+  }b  
+  .Services-intro{
+    width: 400px;
   }
 
   .Fast-Delivery1 {
@@ -2844,9 +2861,7 @@ html, body {
     margin-top: -10px;
     font-size: 13px;
   }
-}
 
-@media (max-width: 768px) {
   .Story-Section{
     display: flex;
     border-top: 5px white;
@@ -2885,97 +2900,61 @@ html, body {
     width: 365px;
     font-size: 13px;
   }
-}
 
-@media (max-width: 768px){
-  .story-sec-design{
-    margin-top: -150px;
-    justify-items: center;
-    align-items: center;
-    width: 500px;
-    display: flex;
-    flex-direction: row;
+  .image-text-container {
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 40px;
   }
-  .ev-card{
-    margin-left: -25px;
-    margin-right: -25px;
-    width: 700px;
-    height: 200px;
+
+  .Story-Text {
+    width: 100%;
+    max-width: 95%;
+    text-align: center;
   }
-  .icon-circle{
-    width: 30px;
-    height: 30px;
+
+  .Story-Text h2 {
+    font-size: 1.8rem;
   }
-  .icon-circle img{
-    width: 20px;
-    height: 20px;
+
+  .Story-Text p {
+    font-size: 14px;
   }
-  .ev-card h3{
-    font-size: 15px;
+
+  .story-image-img img {
+    height: 260px;
   }
-  .ev-card p{
+
+  /* ===== CARDS GRID ===== */
+  .story-sec-design {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 top, 2 bottom */
+    gap: 5px;
+    width: 50%;
+  }
+
+  .ev-card {
+    width: 100%;
+    height: auto;
+    padding: 20px 14px;
+  }
+
+  .ev-card h3 {
+    font-size: 1rem;
+  }
+
+  .ev-card p {
     font-size: 13px;
   }
-  .ev-card p:hover{
-    color: rgb(255, 255, 255);
-  }
-}
 
-
-@media (max-width: 768px) {
-  .our-vision-section,
-  .Our-mission-section{
-    margin-top: -100px;
+  .icon-circle {
+    width: 56px;
+    height: 56px;
   }
 
-  .our-vision-section {
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .Our-vision-texts {
-    width: 350px;
-    text-align: center;
-    margin-bottom: 0px;
-  }
-  .Content-Service{
-    width: 300px;
-  }
-  .Our-vision-texts h2,
-  .Content-Service h2{
-      text-align: left;
-    font-size: 20px;
-  }
-  .Our-vision-texts p,
-  .Content-Service p{
-      text-align: left;
-    font-size: 13px;
-  }
-}
-@media(max-width: 768px){
-  .Our-Core-Values{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .Our-Core-Values h2{
-    font-size: 20px;
-  }
-  .Value-Head-Text{
-    width: 350px;
-  }
-  .Values-Container{
-    background-color: none;
-    width: 500px;
-  }
-  .Values-card{
-    width: 250px;
-    height: 250px;
-    align-items: center;
-    justify-content: center;
+  .icon-circle img {
+    width: 28px;
+    height: 28px;
   }
 
 }
