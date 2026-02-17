@@ -1244,8 +1244,6 @@ html, body {
 
 
 /*==========INDEX MOBILE VIEW==========*/
-/* ========= HEADER ========= */
-
 @media (max-width: 768px) {
   html, body {
   overflow-x: hidden;}
@@ -1340,20 +1338,17 @@ html, body {
     padding-top: 100px;    
   }
 
-  /* Video scales down and fits */
   .hero-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  /* Overlay remains full */
   .hero-overlay {
     width: 100%;
     height: 100%;
   }
 
-  /* Hero content stacks nicely */
   .hero-content {
     padding: 20px;
     text-align: center;
@@ -1425,7 +1420,6 @@ html, body {
 
 
 
-/* Extra small screens (phones) */
   .hero-content h1 {
     font-size: 20px;
   }
@@ -1916,7 +1910,7 @@ html, body {
 
   .footer-contact {
     width: 600px;
-    margin-right: -50px;
+    margin-right: -75px;
     align-content: right;
     text-align: right;
     font-size: 10px;
@@ -1924,7 +1918,7 @@ html, body {
   .copyright {
     text-align: end;
     font-family: 'inter';
-    font-size: 8px;
+    font-size: 7px;
   }
   .email {
     font-size: 10px;
@@ -2305,9 +2299,8 @@ html, body {
 
 /*---------------- MOBILE VIEW ----------------*/
 @media (max-width: 768px) {
-
-  /* ---------------- Services Header ---------------- */
   .Services-header {
+    justify-content: center;
     margin-top: 120px;
     padding: 10px 10px;
     text-align: center;
@@ -2331,12 +2324,14 @@ html, body {
   }
 
   .Services-header h1 {
+    justify-content: center;
     font-size: 24px;
     width: 90%;
     margin: 0 auto 10px auto;
   }
 
   .Services-header p {
+    justify-content: center;
     text-align: center;
     font-size: 14px;
     width: 350px;
@@ -2529,6 +2524,7 @@ html, body {
 /*------------ABOUT US-------------------*/
 /* Story Section Container */
 .Story-Section {
+  justify-content: center;
   opacity: 0.9;
   display: flex;
   flex-direction: column;
@@ -2536,7 +2532,6 @@ html, body {
   margin: 80px auto;
   padding: 0 20px;
   color: #e8e8e8;
-  font-family: 'Segoe UI', sans-serif;
 }
 /*Story Text */
 .Story-Section-container {
@@ -2851,6 +2846,21 @@ html, body {
 }
 /*--------------ABOUT US MOBILE VIEW---------------*/
 @media (max-width: 768px){
+  .Story-Section {
+    width: 100%;
+    justify-content: center;
+  }
+  .Story-Section-container {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   .Header-icon-container {
     width: 100%;
     max-width: 600px;
@@ -2887,23 +2897,6 @@ html, body {
   
 
 @media (max-width: 768px) {
-  .Story-Section{
-    margin-top: -100px;
-  }
-
-  .Story-Section-container {
-    justify-content: center;
-    width: 100%;
-    max-width: 420px;
-    margin: 0 auto;
-    padding: 40px 16px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
   .image-text-container {
     width: 100%;
     display: flex;
@@ -2912,7 +2905,6 @@ html, body {
     gap: 24px;
   }
 
-  /* Image — responsive but not stylistically changed */
   .story-image-img {
     width: 100%;
     display: flex;
@@ -2926,7 +2918,6 @@ html, body {
     display: block;
   }
 
-  /* Text — centered, same sizes */
   .Story-Text {
     width: 100%;
     margin: 0 auto;
