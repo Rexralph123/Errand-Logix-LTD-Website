@@ -1910,7 +1910,7 @@ html, body {
 
   .footer-contact {
     width: 600px;
-    margin-right: -75px;
+    margin-right: -85px;
     align-content: right;
     text-align: right;
     font-size: 10px;
@@ -2305,18 +2305,7 @@ html, body {
     padding: 10px 10px;
     text-align: center;
   }
-  .Services-intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 0 16px;
-    text-align: center;
-    padding-bottom: 30px;
-  }
+
   .Service-info-h1,
   .Services-intro p{
     justify-content: center;
@@ -2347,9 +2336,6 @@ html, body {
     justify-content: center;
     margin: 20px auto;
   }  
-  .Services-intro{
-    width: 400px;
-  }
 
   .Fast-Delivery1 {
     width: 90%;
@@ -3051,3 +3037,22 @@ html, body {
   }
 
 }
+
+@media (max-width: 768px) {
+
+  .Services-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;          
+
+    padding: 0 16px 24px;    
+    text-align: center;
+  }
+
+}
+
