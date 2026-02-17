@@ -1830,11 +1830,10 @@ html, body {
     font-size: 15px;
     margin-top: -5px;
   }
-}
 
-/*-------------------------------------*/
-/* ======= BOTTOM DESIGN MOBILE ====== */
-@media (max-width: 768px) { 
+
+
+  
 .full-footer {
   margin: 0;
   width: 100%;
@@ -2301,10 +2300,8 @@ html, body {
   /* ---------------- Services Header ---------------- */
   .Services-header {
     margin-top: 120px;
-    align-items: center;
-    justify-content: center;
+    padding: 10px 10px;
     text-align: center;
-    padding: 10px;
   }
   .Services-intro {
     display: flex;
@@ -2340,7 +2337,7 @@ html, body {
     align-items: center;
     justify-content: center;
     margin: 20px auto;
-  }b  
+  }  
   .Services-intro{
     width: 400px;
   }
@@ -2446,7 +2443,9 @@ html, body {
     gap: 20px;
     width: 100%;
   }
-
+  .Services-intro p{
+    width: 300px
+  }
   .des-container {
     flex-direction: column;
     align-items: center;
@@ -2847,6 +2846,7 @@ html, body {
     flex-direction: row;
     align-items: center;
   }
+  
   .Fast-Delivery{
     width: 100px;
     height: 130px;
