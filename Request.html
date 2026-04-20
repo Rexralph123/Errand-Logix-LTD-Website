@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Errand — Errand Logix Ltd</title>
+  <meta name="description" content="Book a reliable errand or delivery with Errand Logix Ltd in Lagos. Fast, affordable, and stress-free.">
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<!-- ═══════════ NAV ═══════════ -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="logo">
+    <img src="Images/Errand Logix LTD Logo .png" alt="Errand Logix Logo" onerror="this.style.display='none'">
+    <span class="logo-name">Errand <span>Logix</span> Ltd</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="Services.html">Services</a>
+    <a href="About.html">About</a>
+    <a href="Request.html">Book Errand</a>
+  </div>
+  <div class="nav-actions">
+    <a href="https://wa.me/2349050412857" target="_blank" rel="noopener noreferrer">
+      <button class="btn btn-ghost">WhatsApp Us</button>
+    </a>
+    <a href="Request.html">
+      <button class="btn btn-primary">Book Now →</button>
+    </a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="Services.html">Services</a>
+  <a href="About.html">About Us</a>
+  <a href="Request.html">📦 Book an Errand</a>
+  <a href="https://wa.me/2349050412857" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+</div>
+
+
+<!-- ═══════════ PAGE HERO ═══════════ -->
+<section class="page-hero">
+  <div class="section-label">Get Started</div>
+  <h1>Book Your<br><em>Errand Today</em></h1>
+  <p>Fill out the form below and we'll confirm your booking within minutes. No hassle, no stress — just reliable service.</p>
+</section>
+
+
+<!-- ═══════════ FORM ═══════════ -->
+<section class="form-section">
+  <div class="form-layout">
+
+    <!-- FORM CARD -->
+    <div class="form-card">
+      <div class="form-header">
+        <h2 class="form-title">Request Details</h2>
+        <p class="form-subtitle">Provide the information below so we can prepare your errand efficiently.</p>
+      </div>
+
+      <form id="errandForm" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" class="form-control" placeholder="+234 xxx xxx xxxx" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Service Type * <span class="form-label-note">(select all that apply)</span></label>
+          <div id="serviceGrid" class="service-grid">
+            <label class="svc-chip"><input type="checkbox" name="service" value="Grocery Shopping"><span>🛒 Grocery Shopping</span></label>
+            <label class="svc-chip"><input type="checkbox" name="service" value="Food Delivery"><span>🍔 Food Delivery</span></label>
+            <label class="svc-chip"><input type="checkbox" name="service" value="Fuel Purchase"><span>⛽ Fuel Purchase</span></label>
+            <label class="svc-chip"><input type="checkbox" name="service" value="Pharmacy Run"><span>💊 Pharmacy Run</span></label>
+            <label class="svc-chip"><input type="checkbox" name="service" value="Package Delivery"><span>📦 Package Delivery</span></label>
+            <label class="svc-chip"><input type="checkbox" name="service" value="Document Services"><span>📄 Document Services</span></label>
+            <label class="svc-chip"><input type="checkbox" name="service" value="Retail Returns"><span>♻️ Retail Returns</span></label>
+            <label class="svc-chip"><input type="checkbox" name="service" value="Custom Errand"><span>⚙️ Custom Errand</span></label>
+          </div>
+          <p id="serviceError" class="service-error">Please select at least one service.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="pickup">Pickup Location *</label>
+          <input type="text" id="pickup" name="pickup" class="form-control" placeholder="Address, landmark, or area in Lagos" required>
+        </div>
+
+        <div class="form-group">
+          <label for="delivery">Delivery / Drop-off Location</label>
+          <input type="text" id="delivery" name="delivery" class="form-control" placeholder="Where should we deliver or complete the task?">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Preferred Date <span class="form-label-note">(optional)</span></label>
+            <input type="date" id="date" name="date" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="time">Preferred Time <span class="form-label-note">(optional)</span></label>
+            <input type="time" id="time" name="time" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="details">Errand Details *</label>
+          <textarea id="details" name="details" class="form-control" placeholder="Describe exactly what needs to be done. Include item names, quantities, special instructions, or any relevant details..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="how">How Did You Hear About Us?</label>
+          <select id="how" name="how" class="form-control">
+            <option value="" disabled selected>Select an option</option>
+            <option>Instagram</option>
+            <option>WhatsApp</option>
+            <option>Facebook</option>
+            <option>Twitter (X)</option>
+            <option>Referral / Word of Mouth</option>
+            <option>Google Search</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-submit-wrap">
+          <button type="submit" id="submitBtn" class="btn btn-primary btn-submit">
+            📦 Submit
+          </button>
+          <p class="form-disclaimer">Your request will be sent via WhatsApp and a copy will also be delivered to our email.</p>
+        </div>
+      </form>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="info-sidebar">
+      <div class="sidebar-block">
+        <h3>Contact Us Directly</h3>
+        <a href="https://wa.me/2349050412857" target="_blank" rel="noopener noreferrer">
+          <button class="wa-btn">
+            💬 Chat on WhatsApp
+          </button>
+        </a>
+      </div>
+
+      <div class="sidebar-block">
+        <h3>Service Information</h3>
+        <div class="sidebar-item">
+          <div class="sidebar-dot"></div>
+          <div class="sidebar-item-text">
+            <strong>Operating Hours</strong>
+            <span>24 hours, 7 days a week</span>
+          </div>
+        </div>
+        <div class="sidebar-item">
+          <div class="sidebar-dot"></div>
+          <div class="sidebar-item-text">
+            <strong>Coverage Area</strong>
+            <span>Ago Palace Way, Isolo, Okota, Festac</span>
+          </div>
+        </div>
+        <div class="sidebar-item">
+          <div class="sidebar-dot"></div>
+          <div class="sidebar-item-text">
+            <strong>Response Time</strong>
+            <span>Confirmation within minutes</span>
+          </div>
+        </div>
+        <div class="sidebar-item">
+          <div class="sidebar-dot"></div>
+          <div class="sidebar-item-text">
+            <strong>Payment</strong>
+            <span>Bank transfer or online payment</span>
+          </div>
+        </div>
+        <div class="sidebar-item">
+          <div class="sidebar-dot"></div>
+          <div class="sidebar-item-text">
+            <strong>Email</strong>
+            <span>errandngco@gmail.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-block sidebar-block-terms">
+        <h3>Terms & Conditions</h3>
+        <p class="sidebar-terms-body">By submitting a request, you agree to our terms and conditions. Please read them before booking.</p>
+        <a href="https://docs.google.com/document/d/10pQ7k4DoMv80hsho9hsaVpnkZeVJuSOu/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <button class="btn btn-outline btn-full">Read Terms →</button>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <img src="Images/Errand Logix LTD Logo .png" alt="" onerror="this.style.display='none'">
+        <span class="logo-name">Errand <span>Logix</span> Ltd</span>
+      </a>
+      <p>Your trusted partner for errands and delivery services in Ago Palace Way, Okota &amp; Festac. Fast, reliable, and affordable.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/errand_logix_ltd/" target="_blank" rel="noopener noreferrer" class="social-link">In</a>
+        <a href="https://x.com/ErrandLogix_LTD" target="_blank" rel="noopener noreferrer" class="social-link">𝕏</a>
+        <a href="https://web.facebook.com/profile.php?id=61568703733662" target="_blank" rel="noopener noreferrer" class="social-link">Fb</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="Request.html">Book an Errand</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="https://docs.google.com/document/d/10pQ7k4DoMv80hsho9hsaVpnkZeVJuSOu/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="https://wa.me/2349050412857" target="_blank" rel="noopener noreferrer">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:errandngco@gmail.com">errandngco@gmail.com</a></li>
+        <li><a href="https://wa.me/2349050412857" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></li>
+        <li><span class="footer-address">Ago Palace Way / Festac, Lagos</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Errand Logix Ltd. All rights reserved.</p>
+    <p>Built with care in Lagos, Nigeria 🇳🇬</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+function submitForm(e) {
+  e.preventDefault();
+
+  const name     = document.getElementById('fullName').value.trim();
+  const phone    = document.getElementById('phone').value.trim();
+  const pickup   = document.getElementById('pickup').value.trim();
+  const delivery = document.getElementById('delivery').value.trim();
+  const date     = document.getElementById('date').value;
+  const time     = document.getElementById('time').value;
+  const details  = document.getElementById('details').value.trim();
+  const how      = document.getElementById('how').value;
+
+  const checked = [...document.querySelectorAll('input[name="service"]:checked')];
+  const errEl   = document.getElementById('serviceError');
+  if (checked.length === 0) {
+    errEl.style.display = 'block';
+    document.getElementById('serviceGrid').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+  errEl.style.display = 'none';
+
+  const services = checked.map(c => c.value).join(', ');
+  const schedule = date ? (date + (time ? ' at ' + time : '')) : 'Flexible / ASAP';
+
+  const waMsg = encodeURIComponent(
+`📦 *New Errand Request — Errand Logix Ltd*
+
+👤 *Name:* ${name}
+📞 *Phone:* ${phone}
+🛎️ *Services:* ${services}
+📍 *Pickup:* ${pickup}
+🏠 *Delivery:* ${delivery || 'N/A'}
+📅 *Schedule:* ${schedule}
+📣 *Heard via:* ${how || 'N/A'}
+
+📝 *Details:*
+${details}
+
+_Sent via errandlogix.com_`
+  );
+
+  const emailSubject = encodeURIComponent(`New Errand Request from ${name}`);
+  const emailBody = encodeURIComponent(
+`New Errand Request — Errand Logix Ltd
+
+Name: ${name}
+Phone: ${phone}
+Services: ${services}
+Pickup: ${pickup}
+Delivery: ${delivery || 'N/A'}
+Schedule: ${schedule}
+Heard via: ${how || 'N/A'}
+
+Details:
+${details}
+
+Sent via errandlogix.com`
+  );
+
+  const btn = document.getElementById('submitBtn');
+  btn.textContent = '✓ Sending...';
+  btn.disabled = true;
+
+  window.open('https://wa.me/2349050412857?text=' + waMsg, '_blank');
+
+  setTimeout(() => {
+    window.location.href = `mailto:errandngco@gmail.com?subject=${emailSubject}&body=${emailBody}`;
+  }, 800);
+
+  setTimeout(() => {
+    btn.innerHTML = '✓ Sent! WhatsApp &amp; Email opened';
+    btn.style.background = '#0a8f62';
+  }, 1200);
+
+  setTimeout(() => {
+    btn.innerHTML = '📦 Submit to WhatsApp &amp; Email';
+    btn.disabled = false;
+    btn.style.background = '';
+  }, 5000);
+}
+
+document.querySelectorAll('input[name="service"]').forEach(cb => {
+  cb.addEventListener('change', () => {
+    const anyChecked = document.querySelectorAll('input[name="service"]:checked').length > 0;
+    document.getElementById('serviceError').style.display = anyChecked ? 'none' : 'block';
+  });
+});
+</script>
+</body>
+</html>

@@ -3,481 +3,404 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Errand Logix Ltd</title>
-
-  <link rel="stylesheet" href="Style Css/Style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
-  rel="stylesheet">
+  <title>Errand Logix Ltd — Fast & Reliable Errand Services in Lagos</title>
+  <meta name="description" content="Errand Logix Ltd provides fast, reliable, and affordable errand and delivery services in Ago Palace Way, Isolo & Festac, Lagos.">
+  <link rel="stylesheet" href="Style.css">
 </head>
 <body>
 
-<!----------------------------------------HEADER SECTION--------------------------------------->
-  <section class="header">
-
-    <div class="HeaderMenuTab">
-      
-      <div class="LogoBranding">
-        <!--(Left) Logo and page name -->
-        <div class="Logo">
-            <a href="index.html">
-            <img src="Images/Errand Logix LTD Logo .png" width="30" height="30" alt="Errand Logix LTD Logo">
-            </div>
-            <div class="text">
-            <span>Errand Logix LTD</span>
-            </a>
-        </div>
-      </div>
-
-      <!-- (Center) menu buttons -->
-
-      <section class="CenterMenuButtons">
-          
-          <a href="index.html">
-            <div class="Home">
-              <span>Home</span>
-            </div>
-          </a>
-          
-          <a href="Services.html">
-            <div class="Services">
-            <span>Services</span>
-            </div>
-          </a>
-
-          <a href="About.html">
-            <div class="About">
-            <span>About</span>
-            </div>
-          </a>
-      </section>
-
-
-      
-      
-      <!-- (Right) Sign up and log in button -->
-      <div class="Auth-Buttons-Container">
-        <button class="signup-btn">Sign up</button>
-        <button class="login-btn">Log in</button>
-      </div>
-
-    <div class="mobile-menu-btn" id="menuBtn">☰</div>
-    </div>
-  </section>  
-  <div class="mobile-menu" id="mobileMenu">
-            <a href="index.html">Home</a>
-            <a href="About.html">About Us</a>
-            <a href="Services.html">Services</a>
-          </div>
-
-
-<!---------------------------------------------------------------------------->
-
-
-
-  
-<!------------------------------HERO SECTION---------------------------------->
-  <section class="hero-section">
-
-  <!-- Background video -->
-  <video 
-    class="hero-video"
-    autoplay 
-    loop 
-    muted
-    playsinline
-    src="Videos/Delivery bg.mp4">
-  </video>
-
-  <!-- Overlay gradient (optional, for text readability) -->
-  <div class="hero-overlay"></div>
-
-  <!-- Hero content on top of video -->
-  <div class="hero-content">
-    <h1>What Errands Can We Handle for You Today?</h1>
-    <p>From shopping to deliveries, Errand takes the hassle out of your day. Reliable, affordable, and tailored to your needs.</p>
-    <div class="H-action-buttons">
-      <a href="https://wa.me/2349050412857" target="_blank">
-      <button class="primary-btn">Book an Errand</button>
-      <button class="secondary-btn">Let's work for you</button>
+<!-- ═══════════ NAV ═══════════ -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="logo">
+    <img src="Images/Errand Logix LTD Logo .png" alt="Errand Logix Logo" onerror="this.style.display='none'">
+    <span class="logo-name">Errand <span>Logix</span> Ltd</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="Services.html">Services</a>
+    <a href="About.html">About</a>
+    <a href="Request.html">Book Errand</a>
+  </div>
+  <div class="nav-actions">
+    <a href="https://wa.me/2349050412857" target="_blank" rel="noopener noreferrer">
+      <button class="btn btn-ghost">WhatsApp Us</button>
     </a>
+    <a href="Request.html">
+      <button class="btn btn-primary">Book Now →</button>
+    </a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="Services.html">Services</a>
+  <a href="About.html">About Us</a>
+  <a href="Request.html">📦 Book an Errand</a>
+  <a href="https://wa.me/2349050412857" target="_blank">💬 WhatsApp Us</a>
+</div>
+
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">Now serving Lagos</div>
+    <h1>We Handle<br><em>Your Errands</em><br>You Handle Life</h1>
+    <p class="hero-sub">From grocery runs to document deliveries — Errand Logix takes the hassle out of your day. Reliable, affordable, and always on time.</p>
+
+    <div class="hero-actions">
+      <a href="Request.html">
+        <button class="btn btn-primary btn-hero">📦 Book an Errand</button>
+      </a>
+      <a href="https://wa.me/2349050412857" target="_blank" rel="noopener noreferrer">
+        <button class="btn btn-ghost btn-hero">💬 Talk to Us</button>
+      </a>
     </div>
 
-    <div class="info-section">
-      <div class="info-block">
-        <span class="info-title">Serving in</span>
-        <span class="info-text">Ago, isolo & Festac</span>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">500<span>+</span></div>
+        <div class="stat-label">Deliveries done</div>
       </div>
-      <div class="info-block">
-        <span class="info-title">Powered by</span>
-        <div>
-          <img src="Icons/dinosaur-icon 1.png" alt="Rexempire Logo">
-        <span class="info-text">RexEmpire.Co</span>
-        </div>
+      <div class="stat">
+        <div class="stat-num">300<span>+</span></div>
+        <div class="stat-label">Happy customers</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">24<span>/7</span></div>
+        <div class="stat-label">Always available</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="hero-image-card">
+      <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=600&q=80"
+           alt="Errand Logix delivery runner in Lagos" loading="lazy">
+      <div class="hero-image-badge">
+        <span>⭐</span>
+        <span>Trusted by 300+ customers</span>
+      </div>
+    </div>
+    <div class="info-pill">
+      <div class="pill-icon">📍</div>
+      <div class="pill-text">
+        <strong>Service Area</strong>
+        <small>Ago · Isolo · Festac, Lagos</small>
+      </div>
+    </div>
+    <div class="info-pill">
+      <div class="pill-icon">⚡</div>
+      <div class="pill-text">
+        <strong>Same-Day Delivery</strong>
+        <small>Available across Lagos</small>
+      </div>
+    </div>
+    <div class="info-pill">
+      <div class="pill-icon">✓</div>
+      <div class="pill-text">
+        <strong>Trusted Service</strong>
+        <small>Verified & professional</small>
       </div>
     </div>
   </div>
 </section>
 
 
-
-
-<!-----------------------------Track delivery--------------------------> 
-  <section class="track">
-    <h2>
-      Track Your Delivery Instantly
-    </h2>
-        <p>Enter your Errand ID below to check the status of your Errand Order</p>
-    
-    <div class="search-container">
-      <input type="text" placeholder="Search..." class="search-input">
-      <button class="search-btn">Search</button>
-    </div>
-
-  </section>
-<!----------------------------------------------------------------------------> 
-  
-
-
-
-<!-------------------------OUR SERVICES SECTION------------------------------->
-<section class="Our-services">
-  <div class="Our-services-texts">
-      <h2>Grow Smarter with Errand Logix Ltd</h2>
-        <span class="break-line">
-          We offer comprehensive delivery and errand services tailored to your needs. From groceries to packages, we've got you covered
-        </span>
-  </div>
-
-    <section class="Card-Holders">
-      <!-----------Card 1---------->
-      <div class="card-1">
-        <img id="Displayimg1" src="Images/card1 image.png" alt="Display1">
-        
-        <div class="Courier-texts">
-          <h3>
-            Express Courier Services
-          </h3>
-          <span class="info-span">
-            Fast and reliable courier services for all your urgent delivery needs. We ensure your packages arrive on time, every time.
-          </span>
-          
-          <div class="knowmore-btn">
-          <a href="https://wa.me/2349050412857">
-          Know More <img src="Icons/primary.png" alt=""> 
-          </a>
-        </div>
-          
-        </div>
-      </div>
-
-      <!-----------Card 2---------->
-      <div class="card-1">
-        <img id="Displayimg1" src="Images/grosary shopping.png" alt="Display1">
-        
-        <div class="Courier-texts">
-          <h3>
-            Grocery Delivery
-          </h3>
-          <span class="info-span">
-            Get your groceries delivered fresh to your doorstep. Shop from your favourite stores and we'll handle the rest.
-          </span>
-
-          <div class="knowmore-btn">
-          <a href="https://wa.me/2349050412857">
-          Know More <img src="Icons/primary.png" alt=""> 
-          </a>
-        </div>
-          
-        </div>
-      </div>
-
-      <!-----------Card 3---------->
-      <div class="card-1">
-        <img id="Displayimg1" src="Images/urban-delivery.png" alt= "Display1">
-        
-        <div class="Courier-texts">
-          <h3>
-            Urban Delivery Network
-          </h3>
-          <span class="info-span">
-          Comprehensive urban delivery solutions connecting businesses & customers across the city efficiently.
-          </span>
-
-          <div class="knowmore-btn">
-          <a href="https://wa.me/2349050412857">
-          Know More <img src="Icons/primary.png" alt=""> 
-          </a>
-        </div>
-          
-        </div>
-      </div>
-        
-    </section>
-
-<!--------------------------------------------------------------------------->
-
-
-<!-----------------FAST & AFFORDABLE DELIVERIES------------------------------>
-<section class="Fast-Affordable-Deliveries">
-  <div class="fast-content">
-    <div class="text-contents" >
-      <div class="fa-text">
-        <h1>Fast & Affordable Deliveries</h1>
-        <p>
-          At Errands Logix Ltd, we pride ourselves on delivering exceptional service at competitive prices. Our reliable team ensures your packages and errands are handled with care and delivered promptly. Whether it's a small parcel or a large delivery, we've got the expertise and infrastructure to meet your needs.
-        </p>
-        <a href="https://wa.me/2349050412857">
-        <button class="View-more-btn">View More
-        </a>
-        </button>
-      </div>
-    </div>
-
-    <div class="fast-content-image">
-      <img src="Images/Boxes.png" alt="packages-img">
-    </div>
+<!-- ═══════════ TICKER ═══════════ -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item">Grocery Shopping</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item">Same-Day Delivery</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item">Pharmacy Runs</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item">Document Services</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item">Food Pickup</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item">Fuel Purchase</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item">Custom Errands</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item">Business Errands</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item">Grocery Shopping</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item">Same-Day Delivery</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item">Pharmacy Runs</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item">Document Services</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item">Food Pickup</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item">Fuel Purchase</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item">Custom Errands</span><span class="ticker-dot">◆</span>
+    <span class="ticker-item">Business Errands</span><span class="ticker-dot">◆</span>
   </div>
 </div>
-</section>
-<!--------------------------------------------------------------------------->
 
 
+<!-- ═══════════ SERVICES ═══════════ -->
+<section class="services-section">
+  <div class="services-header">
+    <div>
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Comprehensive Errand<br>& Delivery Services</h2>
+    </div>
+    <div>
+      <p class="section-body">From personal to business tasks — we handle a wide range of errands so you can stay focused on what matters most.</p>
+      <a href="Services.html" class="services-view-all">
+        <button class="btn btn-outline">View All Services →</button>
+      </a>
+    </div>
+  </div>
 
-
-<!---------------------Professional & Partnership Focused-------------------->
-<section class="professional-partnership">
-  <div class="p-container">
-    <img class="deliveryrider-image" src="Images/delivery rider.png" alt="delivery rider" > 
-      <div class="Content">
-        <h1>
-            Professional & Partnership Focused
-          </h1>
-            <h2>
-              Stop worrying about riders who don’t show up or deliveries that go missing. Partner with Errand Logix Ltd to streamline your operations.
-            </h2>
-            <div class="bbtext">
-              <p>
-              Doorstep Delivery bridges the gap between you and your customers with fast, reliable service you can trust. Our professionally trained team handles your goods with utmost care, ensuring real-time reliability from pickup to delivery. While we take care of the how and when, you stay focused on what truly matters growing your brand. Ready to ship? Partner with us today and give your customers the delivery experience they deserve.
-              </p>
-            </div> 
-            <a href="https://wa.me/2349050412857">
-            <button class="Partner-with-us">Partner with us</button> 
-            </a>
-      </div>
+  <div class="services-grid">
+    <div class="service-item fade-up">
+      <span class="service-num">01</span>
+      <span class="service-icon">🛒</span>
+      <h3>Grocery Shopping</h3>
+      <p>We pick up your groceries from any store and deliver them fresh to your doorstep.</p>
+    </div>
+    <div class="service-item fade-up">
+      <span class="service-num">02</span>
+      <span class="service-icon">🍔</span>
+      <h3>Food Delivery</h3>
+      <p>Craving something? We'll collect your order from any restaurant of your choice.</p>
+    </div>
+    <div class="service-item fade-up">
+      <span class="service-num">03</span>
+      <span class="service-icon">💊</span>
+      <h3>Pharmacy Runs</h3>
+      <p>Quick and secure pickup of medications and pharmacy essentials when you need them.</p>
+    </div>
+    <div class="service-item fade-up">
+      <span class="service-num">04</span>
+      <span class="service-icon">📦</span>
+      <h3>Package Delivery</h3>
+      <p>Fast and reliable pick-up and delivery of packages and parcels across Lagos.</p>
+    </div>
+    <div class="service-item fade-up">
+      <span class="service-num">05</span>
+      <span class="service-icon">📄</span>
+      <h3>Document Services</h3>
+      <p>Drop-off and collection of important documents, mail, and official paperwork.</p>
+    </div>
+    <div class="service-item fade-up">
+      <span class="service-num">06</span>
+      <span class="service-icon">⚙️</span>
+      <h3>Custom Errands</h3>
+      <p>Have a unique task? We're flexible and always ready to help with anything you need.</p>
+    </div>
   </div>
 </section>
-<!----------------------------------------------------------------------------->
 
 
+<!-- ═══════════ HOW IT WORKS ═══════════ -->
+<section class="how-section">
+  <div class="section-label">The Process</div>
+  <h2 class="section-title">How Errand Logix Works</h2>
+  <p class="section-body">Three simple steps and your errand is handled. No stress, no delays — just reliable service every time.</p>
+
+  <div class="steps">
+    <div class="step fade-up">
+      <div class="step-num">01</div>
+      <h3>Place Your Request</h3>
+      <p>Submit your errand online or via WhatsApp. Describe the task and provide location details — takes less than 2 minutes.</p>
+      <div class="step-arrow"></div>
+    </div>
+    <div class="step fade-up">
+      <div class="step-num">02</div>
+      <h3>Get a Confirmation</h3>
+      <p>We confirm the details and provide a quote within minutes. No hidden fees — what you see is what you pay.</p>
+      <div class="step-arrow"></div>
+    </div>
+    <div class="step fade-up">
+      <div class="step-num">03</div>
+      <h3>Relax & Receive</h3>
+      <p>Sit back while our runner completes your errand. We keep you updated every step of the way.</p>
+    </div>
+  </div>
+</section>
 
 
+<!-- ═══════════ PROMO BAND ═══════════ -->
+<section class="promo-band">
+  <div class="promo-inner">
+    <div>
+      <div class="promo-tag-pill">Limited Time Offer</div>
+      <h2>Lock in Our <strong>₦2,000 Promo Rate</strong> Today</h2>
+      <p>Our standard rate is ₦3,500. Book now and save with our special promotional pricing — offer ends soon.</p>
+      <a href="Request.html">
+        <button class="btn btn-primary btn-promo">📦 Book at Promo Rate</button>
+      </a>
+    </div>
+    <div class="promo-prices">
+      <div class="price-block">
+        <div class="price-label">Standard</div>
+        <div class="price-main strikethrough">₦3,500</div>
+      </div>
+      <div class="price-divider">→</div>
+      <div class="price-block">
+        <div class="price-label">Promo Rate</div>
+        <div class="price-main green">₦2,000</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-------------------------------HOW ERRAND WORKS------------------------------>
 
-<section class="how-errand-works">
+<!-- ═══════════ TRACK ═══════════ -->
+<section class="track-section">
+  <div class="track-card">
+    <div class="track-text">
+      <div class="section-label">Real-Time Updates</div>
+      <h2>Track Your Errand</h2>
+      <p>Enter your Errand ID to get an instant status update on your order via WhatsApp.</p>
+    </div>
+    <div class="track-form">
+      <input type="text" id="trackInput" class="track-input" placeholder="Enter Errand ID e.g. EL-20001">
+      <button class="btn btn-primary" onclick="trackOrder()">Track →</button>
+    </div>
+  </div>
+</section>
 
-    <h1>How Errand Logix LTD works</h1> 
-  
-  <div class="howitworks-container">
-  
-    <div class="place-request">
-      <div class="step-circle"><span>1</span></div>
-        <div class="step-text">
-        <h2>Place your request</h2>
-        <p>Submit your delivery request online or via WhatsApp.</p>
+
+<!-- ═══════════ WHY US ═══════════ -->
+<section class="why-us-section">
+  <div class="section-label">Why Choose Us</div>
+  <h2 class="section-title">Professional &amp; Partnership Focused</h2>
+  <p class="section-body">Stop worrying about unreliable runners or missing deliveries. We build trust through consistency and accountability.</p>
+
+  <div class="values-grid">
+    <div class="value-card fade-up">
+      <div class="value-icon">⚡</div>
+      <h3>Speed & Efficiency</h3>
+      <p>We value your time above everything. Every errand is executed with urgency and precision.</p>
+    </div>
+    <div class="value-card fade-up">
+      <div class="value-icon">🛡️</div>
+      <h3>Reliability</h3>
+      <p>We build trust through consistency, transparency, and full accountability on every order.</p>
+    </div>
+    <div class="value-card fade-up">
+      <div class="value-icon">❤️</div>
+      <h3>Customer First</h3>
+      <p>Your satisfaction drives everything we do — from the moment you book to the final delivery.</p>
+    </div>
+    <div class="value-card fade-up">
+      <div class="value-icon">🌟</div>
+      <h3>Excellence</h3>
+      <p>We continuously improve and set higher standards to exceed your expectations every time.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════ TESTIMONIALS ═══════════ -->
+<section class="testimonials-section">
+  <div class="section-label">Happy Customers</div>
+  <h2 class="section-title">What Lagos Says<br>About Us</h2>
+  <p class="section-body">Real feedback from real customers across Ago, Isolo, Okota and Festac.</p>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card fade-up">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">"I sent them to pick up my medication from the pharmacy while I was stuck at work. They were fast, professional, and kept me updated throughout. Truly a lifesaver!"</p>
+      <div class="testimonial-author">
+        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=100&q=80"
+             alt="Adaeze O." class="testimonial-avatar" loading="lazy">
+        <div>
+          <div class="testimonial-name">Adaeze O.</div>
+          <div class="testimonial-loc">Ago Palace Way, Lagos</div>
         </div>
-      <div class="step-img">
-        <img src="Images/Make a request .png" alt="Make your request image">
       </div>
     </div>
-
-    
-    <div class="get-quote">
-      <div class="step-img">
-        <img src="Images/GET QUOTE.png" alt="Get a quote image">
-      </div>
-      <div class="step-circle"><span>2</span></div>
-      <div class="step-text">
-        <h2>Get a Quote</h2>
-        <p>Receive a confirmation and the cost for the service within minutes.</p>
-      </div>
-    </div>
-
-    
-    <div class="relax-receive">
-      <div class="step-circle"><span>3</span></div>
-      <div class="step-text">
-        <h2>Relax and Receive</h2>
-        <p>Sit back while we complete your errand and deliver it to you.</p>
-      </div>
-      <div class="step-img">
-        <img src="Images/Relax and recieve.png" alt="Relax and receive image">
+    <div class="testimonial-card fade-up">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">"Booked a grocery run for the first time and honestly I was impressed. Everything was bought exactly as I listed, delivered fresh, and the price was very fair."</p>
+      <div class="testimonial-author">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
+             alt="Emeka D." class="testimonial-avatar" loading="lazy">
+        <div>
+          <div class="testimonial-name">Emeka D.</div>
+          <div class="testimonial-loc">Festac Town, Lagos</div>
+        </div>
       </div>
     </div>
-
-  </div> 
-</section>
-<!--------------------------------------------------------------------------------->
-
-
-
-
-
-
-<!------------------------------Call to Action---------------------------------->
-  <section class="Call-to-action">
-
-    <div class="promo-info-container">
-      <div class="Graphics">
-          <div class="promo-info1">
-            <div class="promo-img-2">
-            <img src="Images/Phone and car cat image.png" alt="Discount image">
-              <span class="promo-tag">100% Full Price</span>
-          </div>
-
-            <div class="promotext2">
-              <div class="Amount-text2">₦3500</div>
-              <p class="definition-text">Full price</p>
-            </div>
+    <div class="testimonial-card fade-up">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">"They handled my business document delivery across Lagos without any issues. Response time on WhatsApp was instant. Will definitely use again for our office errands."</p>
+      <div class="testimonial-author">
+        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&q=80"
+             alt="Chioma B." class="testimonial-avatar" loading="lazy">
+        <div>
+          <div class="testimonial-name">Chioma B.</div>
+          <div class="testimonial-loc">Isolo, Lagos</div>
+        </div>
       </div>
-
-          <div class="promo-info2">
-          <div class="promo-img-2">
-            <img src="Images/cart basket discout image.png" alt="Discount image">
-              <span class="promo-tag">10% OFF</span>
-          </div>
-
-            <div class="promotext2">
-              <div class="Amount-text2">₦2,000</div>
-              <p class="definition-text"> Discount</p>
-            </div>
-          </div>
-      </div>
-    </div>  
-      <div class="promo-info-text">
-          <div class="PROMO-H1">
-            <h2>Take advantage of our ₦ 2,000 promo rate Today!</h2>
-          </div>
-            <div class="click-text">Click book now to get started</div>
-          <a href="https://wa.me/2349050412857">
-          <button class="Book-now">Book now</button>
-          </a>
-      </div>
-</section>
+    </div>
+  </div>
 </section>
 
-<!------------------------------------------------------------------------------>
+
+<!-- ═══════════ CTA ═══════════ -->
+<section class="cta-section">
+  <h2>Ready to Delegate?<br>We're Ready to Help.</h2>
+  <p>Fill out our quick request form and we'll get back to you within minutes. Fast, easy, stress-free.</p>
+  <div class="cta-buttons">
+    <a href="Request.html">
+      <button class="btn btn-dark btn-lg">📦 Submit a Request</button>
+    </a>
+    <a href="https://wa.me/2349050412857" target="_blank" rel="noopener noreferrer">
+      <button class="btn btn-ghost-cta btn-lg">💬 WhatsApp Us</button>
+    </a>
+  </div>
+</section>
 
 
-
-
-
-
-<!--------------------------BOTTOM DESIGN SECTION------------------------------>
-<Section class="full-footer"> 
-  <div class="icon-container"> 
-    <div class="icons">
-          <!-- Design 1 -->
-          <div class="design2">
-            <img class="design2-img" src="Icons/location icon.png" alt="location icon">
-            <h4>Ago Palace Way / Festac, Lagos, Nigeria</h4>
-            <img class="design2-down" src="Icons/map icon.png" alt="map icon">
-          </div>
-
-          <!-- Design 2 -->
-          <div class="design2">
-            <img class="design2-img" src="Icons/clock.png" alt="clock icon">
-            <h4>Errand Logix LTD - Reliable Errand Services at Your Fingertips</h4>
-            <img class="design2-down" src="Icons/24 hrs icon.png" alt="24 hrs icon">
-          </div>
-
-          <!-- Design 3 -->
-          <div class="design2">
-            <img class="design2-img" src="Icons/heart .png" alt="love Icon">
-            <h4>You can also reach out to us via WhatsApp or follow us on Instagram</h4>
-            <img class="design2-down" src="Icons/insta followers.png" alt="social activity icon">
-          </div>
-      </div> 
-    </div>
-<!------------------FOOTER--------------------->
-          <div class="bottom-background-img"> 
-                <img src="Images/Background CAT image .png" alt="Background image" class="bg-cat-img"> 
-          </div> 
-        
-      <div class="CATbottom-img">
-        <img src="Images/bottom image .png" alt="delivery images" class="bottom-image">
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <img src="Images/Errand Logix LTD Logo .png" alt="" onerror="this.style.display='none'">
+        <span class="logo-name">Errand <span>Logix</span> Ltd</span>
+      </a>
+      <p>Your trusted partner for errands and delivery services in Ago Palace Way, Okota &amp; Festac. Fast, reliable, and affordable.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/errand_logix_ltd/" target="_blank" rel="noopener noreferrer" class="social-link">In</a>
+        <a href="https://x.com/ErrandLogix_LTD" target="_blank" rel="noopener noreferrer" class="social-link">𝕏</a>
+        <a href="https://web.facebook.com/profile.php?id=61568703733662" target="_blank" rel="noopener noreferrer" class="social-link">Fb</a>
       </div>
-<!------------------------------------------------------------------------------>
-
-
-
-
-<!-- ================= FOOTER SECTION ================= -->
-<footer class="footer-section">
-
-  <div class="footer-inner">
-
-    <!-- About -->
-    <div class="footer-aboutus">
-      <h2>About Us</h2>
-      <p>
-        Errand, your trusted partner for errands and delivery services in Ago Palace Way, Okota. 
-        We are committed to offering fast, reliable, and affordable solutions for your daily needs.
-      </p>
     </div>
-
-    <!-- Services -->
-    <div class="services-links">
-      <h2>Services</h2>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
       <ul>
-        <li><a href="https://wa.me/2349050412857">Pricing</a></li>
-        <li><a href="https://docs.google.com/document/d/10pQ7k4DoMv80hsho9hsaVpnkZeVJuSOu/edit?usp=sharing&ouid=105971501533763266192&rtpof=true&sd=true">Terms & Conditions</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="Request.html">Book an Errand</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="https://docs.google.com/document/d/10pQ7k4DoMv80hsho9hsaVpnkZeVJuSOu/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Terms & Conditions</a></li>
         <li><a href="#">Privacy Policy</a></li>
+        <li><a href="https://wa.me/2349050412857" target="_blank" rel="noopener noreferrer">Pricing</a></li>
       </ul>
     </div>
-
-    <!-- Social Media -->
-    <div class="social-media-links">
-      <h2>Social Media</h2>
+    <div class="footer-col">
+      <h4>Contact</h4>
       <ul>
-        <li><img src="Icons/Instagram.png" alt=""> <a href="https://www.instagram.com/errand_logix_ltd/">Instagram</a></li>
-        <li><img src="Icons/Twitter.png" alt=""> <a href="https://x.com/ErrandLogix_LTD">Twitter (X)</a></li>
-        <li><img src="Icons/Facebook.png" alt=""> <a href="https://web.facebook.com/profile.php?id=61568703733662">Facebook</a></li>
-      </ul>
-    </div>
-
-    <!-- Payment -->
-    <div class="payment-options">
-      <h2>Payment Options</h2>
-      <ul>
-        <li><a href="#">Bank Transfer</a></li>
-        <li><a href="#">Online Payment</a></li>
+        <li><a href="mailto:errandngco@gmail.com">errandngco@gmail.com</a></li>
+        <li><a href="https://wa.me/2349050412857" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></li>
+        <li><span class="footer-address">Ago Palace Way / Festac, Lagos</span></li>
       </ul>
     </div>
   </div>
-</section>
-
-
-
-
-<section class="footer-bottom-content">
-
   <div class="footer-bottom">
-
-    <div class="logo-branding">
-      <img class="Logo-img" src="Images/Errand Logix LTD Logo .png" alt="Logo">
-      <span>Errand Logix LTD</span>
-    </div>
-
-    <div class="footer-contact">
-      <div class="email">errandngco@gmail.com</div>
-      <div class="copyright">© Errand Logix LTD. All rights reserved</div>
-    </div>
-
+    <p>© 2025 Errand Logix Ltd. All rights reserved.</p>
+    <p>Built with care in Lagos, Nigeria 🇳🇬</p>
   </div>
+</footer>
 
-</section>
-
-<!------------------------------------------------------------------------------>
-<script src="JavaScript/index.js"></script>
+<script src="script.js"></script>
 </body>
+</html>
